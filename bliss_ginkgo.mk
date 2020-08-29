@@ -25,7 +25,7 @@ $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
 # Inherit some common ArrowOS stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-BLISS_BUILD_TYPE := UNOFFICIAL
+BLISS_BUILD_TYPE := OFFICIAL
 $(call inherit-product, vendor/bliss/config/common.mk)
 
 # Device identifier
