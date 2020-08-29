@@ -25,16 +25,16 @@ $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
 # Inherit some common ArrowOS stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/arrow/config/common.mk)
+BLISS_BUILD_TYPE := UNOFFICIAL
+$(call inherit-product, vendor/bliss/config/common.mk)
 
 # Device identifier
-PRODUCT_NAME := arrow_ginkgo
+PRODUCT_NAME := bliss_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-DEVICE_MAINTAINER := Adithya R
 
 # Fingerprint
 BUILD_FINGERPRINT := google/coral/coral:10/QQ3A.200805.001/6578210:user/release-keys
